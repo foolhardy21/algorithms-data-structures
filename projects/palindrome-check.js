@@ -6,11 +6,11 @@ function palindrome(str) {
              if((char.charCodeAt(0)>=97 && char.charCodeAt(0)<=122)
              || ((char.charCodeAt(0)>=48 && char.charCodeAt(0)<=57)))
              return char
-  })
-  console.log(str.join(''))
+           })
+           .join('')
   //filtering done
-
-
+  const reverseStr = str.split('').reverse().join('')
+  return (str.includes(reverseStr)) ? true : false
 }
 
 
